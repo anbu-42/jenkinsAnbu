@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/anbu-42/jenkinsAnbu.git'
+               git branch: 'main', url: 'https://github.com/anbu-42/jenkinsAnbu.git'
             }
         }
         stage('Run Python Script') {
