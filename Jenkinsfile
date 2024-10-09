@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run Python Script') {
             steps {
-                bat 'python demo.py'
+                bat 'C:\Users\Eraiyanbu\AppData\Local\Programs\Python\Python310\python.exe demo.py'
             }
         }
     }
