@@ -1,8 +1,8 @@
 pipeline {
     agent any
-     environment {
+     // environment {
      // env.PATH = env.PATH + "c:\\Windows\\System32"
- }
+ // }
     stages {
         stage('Clone Repository') {
             steps {
