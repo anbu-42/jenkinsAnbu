@@ -6,6 +6,12 @@ pipeline {
                git branch: 'main', url: 'https://github.com/anbu-42/jenkinsAnbu.git'
             }
         }
+        stage('Check Environment') {
+            steps {
+                bat 'echo %PATH%'
+                bat 'python --version'
+            }
+        }
         stage('Run Python Script') {
             steps {
                 bat 'python demo.py'
